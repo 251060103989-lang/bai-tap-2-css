@@ -36,18 +36,25 @@ nav img {
 
 /* Lớp grid (2 cột ~40%) */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 40%);
-  justify-content: space-around;
-  align-items: center;
-  row-gap: 20px;
-  margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+    margin: 20px 0;
 }
 
-/* Bộ chọn hậu duệ cho ảnh trong grid (width: 100%) */
+.grid .grid-item {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Bộ chọn hậu duệ cho ảnh trong grid */
 .grid img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Lớp flex */
